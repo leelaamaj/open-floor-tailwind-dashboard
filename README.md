@@ -1,41 +1,26 @@
-# HTML Hello
+# OPEN FLOOR // Backstage
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+A static, responsive creator dashboard for fictional house DJ Rafi Solis. Built for the 4Geeks **A simple Dashboard with Tailwind CSS** project using semantic HTML and Tailwind CSS v4. The page contains fictional sample data for September 1–28, 2026.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+## Preview
 
-## What to do next?
+Open `index.html` in a browser, or serve this folder with a simple static server. The page loads Tailwind v4 from `https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4`, so the browser needs an internet connection for its styles.
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+## What the dashboard answers
 
-```bash
-$ pip3 install flask && python3 server.py
-```
+- How much commission did Rafi earn? **€3,232.50** from **280** tracked sales.
+- Which product earns the most? **Creator Kit**, with **€1,440** commission.
+- Which platform has the highest commission ROI? **Twitch**, at **215.00%**.
+- Which platform brings the most sales? **TikTok**, with **90**.
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+Commission is 15% of each product's sales value. Sales per platform reach is sales divided by that platform's reach. Engagement rate is engagements divided by reach. Commission ROI is `(commission - promotion cost) / promotion cost`. The combined reach of 134,000 is a sum across platforms and is **not** a unique audience count.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+## Assignment structure
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+1. **The Pulse:** three headline KPIs.
+2. **What Moved the Room:** platform performance, product performance, and a directional content funnel.
+3. **The Crate:** operational platform and product details plus a recommendation.
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+The layout is mobile first and adapts through Tailwind's responsive breakpoints. It uses no React, Vue, external chart package, custom stylesheet, or interactive controls.
 
-### Contributors
-
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
-
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+[4Geeks project page](https://learn.4geeks.com/main-cohort/miami-ft-ai-engineering-4/syllabus/web-ui-fundamentals-with-tailwind-miami-self-paced/project/simple-dashboard-tailwind-css?moduleId=2)
