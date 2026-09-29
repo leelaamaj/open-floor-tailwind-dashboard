@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101114" />
+    <meta name="description" content="OPEN FLOOR Backstage: a sample creator dashboard for fictional house DJ Rafi Solis." />
+    <title>OPEN FLOOR // Backstage</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-w-[280px] bg-[#f3f0e7] font-sans text-[#141519] antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[#c8f15a] focus:px-4 focus:py-2 focus:font-bold focus:text-[#101114]">Skip to dashboard</a>
+
+    <header class="bg-[#101114] text-[#f3f0e7]">
+      <div class="mx-auto flex max-w-[1600px] flex-col gap-7 px-5 py-7 sm:px-8 md:flex-row md:items-end md:justify-between md:gap-8 lg:px-12 lg:py-9">
+        <div>
+          <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1 leading-none">
+            <span class="text-4xl font-black tracking-[-0.075em] sm:text-5xl lg:text-6xl">OPEN FLOOR</span>
+            <span class="text-3xl font-bold tracking-[-0.06em] text-[#c8f15a] sm:text-4xl lg:text-5xl">// Backstage</span>
+          </div>
+          <p class="mt-3 text-sm text-[#d6d1c8] sm:text-base">Rafi Solis · Music connects us.</p>
+        </div>
+        <div class="flex flex-wrap items-end gap-x-8 gap-y-3 md:justify-end">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[#b8b6ad]">Reporting period</p>
+            <p class="mt-1 text-base font-semibold sm:text-lg">September 1–28, 2026</p>
+          </div>
+          <span class="rounded-full border border-[#c8f15a] px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#c8f15a]">Sample data</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1 class="sr-only">OPEN FLOOR creator performance dashboard</h1>
+
+      <section aria-labelledby="pulse-title" class="border-b border-[#d5d1c8]">
+        <div class="mx-auto grid max-w-[1600px] gap-7 px-5 py-9 sm:px-8 sm:py-12 lg:grid-cols-[245px_minmax(0,1fr)] lg:gap-10 lg:px-12">
+          <div class="lg:pt-1">
+            <p class="flex items-center gap-3 text-sm font-bold tracking-[0.14em] text-[#8066ac]"><span>01</span><span class="h-px w-14 bg-[#928b84]" aria-hidden="true"></span></p>
+            <h2 id="pulse-title" class="mt-4 text-4xl font-black uppercase leading-[0.92] tracking-[-0.06em] sm:text-5xl">The Pulse</h2>
+            <p class="mt-4 max-w-[25rem] text-sm leading-6 text-[#525157]">The three numbers Rafi needs before deciding what to play, post, or promote next.</p>
+            <p class="mt-7 hidden border-t border-[#bcb8ae] pt-4 text-[10px] font-semibold uppercase leading-5 tracking-[0.24em] text-[#5b5961] lg:block">More music<br />Brighter rooms<br />A kinder internet</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <article class="flex min-h-52 flex-col justify-between rounded-xl bg-[#15161a] p-6 text-[#f3f0e7] shadow-[0_8px_24px_rgba(16,17,20,0.08)] sm:p-7">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="max-w-36 text-sm font-medium leading-5 text-[#ddd9d0]">Commission earned</h3>
+                <span class="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#c8f15a] text-xl text-[#c8f15a]" aria-hidden="true">€</span>
+              </div>
+              <div>
+                <p class="text-[clamp(2.25rem,4vw,4.1rem)] font-black leading-none tracking-[-0.075em]">€3,232.50</p>
+                <p class="mt-4 border-t border-[#383a3c] pt-3 text-xs leading-5 text-[#bcb9b1]">Rafi's 15% share of tracked sales, before promotion costs.</p>
+              </div>
+            </article>
+            <article class="flex min-h-52 flex-col justify-between rounded-xl bg-[#15161a] p-6 text-[#f3f0e7] shadow-[0_8px_24px_rgba(16,17,20,0.08)] sm:p-7">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="text-sm font-medium leading-5 text-[#ddd9d0]">Sales</h3>
+                <span class="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#a491c9] text-lg text-[#a491c9]" aria-hidden="true">↗</span>
+              </div>
+              <div>
+                <p class="text-[clamp(2.75rem,5vw,4.5rem)] font-black leading-none tracking-[-0.075em]">280</p>
+                <p class="mt-4 border-t border-[#383a3c] pt-3 text-xs leading-5 text-[#bcb9b1]">Partner product purchases attributed to four platforms.</p>
+              </div>
+            </article>
+            <article class="flex min-h-52 flex-col justify-between rounded-xl bg-[#15161a] p-6 text-[#f3f0e7] shadow-[0_8px_24px_rgba(16,17,20,0.08)] sm:col-span-2 sm:p-7 xl:col-span-1">
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="max-w-40 text-sm font-medium leading-5 text-[#ddd9d0]">Sales per platform reach</h3>
+                <span class="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#c8f15a] text-lg text-[#c8f15a]" aria-hidden="true">%</span>
+              </div>
+              <div>
+                <p class="text-[clamp(2.75rem,5vw,4.5rem)] font-black leading-none tracking-[-0.075em]">0.21%</p>
+                <p class="mt-4 border-t border-[#383a3c] pt-3 text-xs leading-5 text-[#bcb9b1]">280 sales ÷ 134,000 summed platform reach.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="drivers-title" class="border-b border-[#d5d1c8]">
+        <div class="mx-auto grid max-w-[1600px] gap-7 px-5 py-9 sm:px-8 sm:py-12 lg:grid-cols-[245px_minmax(0,1fr)] lg:gap-10 lg:px-12">
+          <div class="lg:pt-1">
+            <p class="flex items-center gap-3 text-sm font-bold tracking-[0.14em] text-[#8066ac]"><span>02</span><span class="h-px w-14 bg-[#928b84]" aria-hidden="true"></span></p>
+            <h2 id="drivers-title" class="mt-4 max-w-72 text-4xl font-black uppercase leading-[0.92] tracking-[-0.06em] sm:text-5xl">What Moved the Room</h2>
+            <p class="mt-4 max-w-[25rem] text-sm leading-6 text-[#525157]">Where attention became connection, and where connection became income.</p>
+            <p class="mt-7 hidden border-t border-[#bcb8ae] pt-4 text-[10px] font-semibold uppercase leading-5 tracking-[0.24em] text-[#5b5961] lg:block">Same beats<br />Different people<br />Bigger possibilities</p>
+          </div>
+
+          <div class="grid gap-4 xl:grid-cols-3">
+            <article class="rounded-xl border border-[#d6d2ca] bg-[#fbf9f4] p-5 sm:p-6">
+              <div class="flex items-baseline justify-between gap-3">
+                <h3 class="text-lg font-bold tracking-[-0.035em]">Platform performance</h3>
+                <span class="text-xs text-[#66636b]">Sales by platform</span>
+              </div>
+              <ul class="mt-7 space-y-6">
+                <li>
+                  <div class="flex justify-between gap-3 text-sm"><span class="font-semibold">TikTok</span><span>90 sales · €945</span></div>
+                  <div class="mt-2 h-2 rounded-full bg-[#e5e1da]" aria-hidden="true"><div class="h-2 w-full rounded-full bg-[#c8f15a]"></div></div>
+                </li>
+                <li>
+                  <div class="flex justify-between gap-3 text-sm"><span class="font-semibold">Instagram</span><span>80 sales · €930</span></div>
+                  <div class="mt-2 h-2 rounded-full bg-[#e5e1da]" aria-hidden="true"><div class="h-2 w-[89%] rounded-full bg-[#a491c9]"></div></div>
+                </li>
+                <li>
+                  <div class="flex justify-between gap-3 text-sm"><span class="font-semibold">YouTube</span><span>60 sales · €727.50</span></div>
+                  <div class="mt-2 h-2 rounded-full bg-[#e5e1da]" aria-hidden="true"><div class="h-2 w-[67%] rounded-full bg-[#a491c9]"></div></div>
+                </li>
+                <li>
+                  <div class="flex justify-between gap-3 text-sm"><span class="font-semibold">Twitch</span><span>50 sales · €630</span></div>
+                  <div class="mt-2 h-2 rounded-full bg-[#e5e1da]" aria-hidden="true"><div class="h-2 w-[56%] rounded-full bg-[#a491c9]"></div></div>
+                </li>
+              </ul>
+              <p class="mt-7 border-t border-[#d6d2ca] pt-4 text-xs leading-5 text-[#56545b]">TikTok delivers the most sales. Twitch converts the largest share of its reach: 0.50%.</p>
+            </article>
+
+            <article class="rounded-xl border border-[#d6d2ca] bg-[#fbf9f4] p-5 sm:p-6">
+              <h3 class="text-lg font-bold tracking-[-0.035em]">Product performance</h3>
+              <p class="mt-1 text-xs text-[#66636b]">Commission by product</p>
+              <div class="mt-7 rounded-lg bg-[#17181c] px-5 py-6 text-[#f3f0e7]">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[#c8f15a]">Top earner</p>
+                <p class="mt-2 text-2xl font-bold tracking-[-0.04em]">Creator Kit</p>
+                <p class="mt-1 text-4xl font-black tracking-[-0.06em]">€1,440</p>
+                <p class="mt-2 text-xs text-[#c7c3ba]">80 sales · €120 price · €18 commission each</p>
+              </div>
+              <ul class="mt-6 space-y-4 text-sm">
+                <li class="flex justify-between border-b border-[#e5e1da] pb-3"><span>Floor Pass</span><strong>€1,012.50</strong></li>
+                <li class="flex justify-between border-b border-[#e5e1da] pb-3"><span>Vinyl Bundle</span><strong>€780</strong></li>
+              </ul>
+              <p class="mt-5 text-xs leading-5 text-[#56545b]">The Creator Kit earns the most commission even though Floor Pass sells more units.</p>
+            </article>
+
+            <article class="rounded-xl border border-[#d6d2ca] bg-[#fbf9f4] p-5 sm:p-6">
+              <h3 class="text-lg font-bold tracking-[-0.035em]">The content funnel</h3>
+              <p class="mt-1 text-xs text-[#66636b]">A directional view of the audience journey</p>
+              <ol class="mt-7 space-y-3 text-center">
+                <li class="rounded-md bg-[#c8f15a] px-3 py-4 text-[#101114]"><strong class="block text-3xl font-black tracking-[-0.05em]">134,000</strong><span class="text-xs font-semibold uppercase tracking-[0.1em]">Summed reach</span></li>
+                <li class="mx-4 rounded-md bg-[#a491c9] px-3 py-4 text-[#101114]"><strong class="block text-3xl font-black tracking-[-0.05em]">10,300</strong><span class="text-xs font-semibold uppercase tracking-[0.1em]">Engagements</span></li>
+                <li class="mx-8 rounded-md bg-[#17181c] px-3 py-4 text-[#f3f0e7]"><strong class="block text-3xl font-black tracking-[-0.05em]">280</strong><span class="text-xs font-semibold uppercase tracking-[0.1em]">Sales</span></li>
+              </ol>
+              <p class="mt-6 text-xs leading-5 text-[#56545b]">7.69% engagements per summed reach. This does not mean every buyer engaged first, or that reach counts unique people.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="details-title">
+        <div class="mx-auto grid max-w-[1600px] gap-7 px-5 py-9 sm:px-8 sm:py-12 lg:grid-cols-[245px_minmax(0,1fr)] lg:gap-10 lg:px-12">
+          <div class="lg:pt-1">
+            <p class="flex items-center gap-3 text-sm font-bold tracking-[0.14em] text-[#8066ac]"><span>03</span><span class="h-px w-14 bg-[#928b84]" aria-hidden="true"></span></p>
+            <h2 id="details-title" class="mt-4 text-4xl font-black uppercase leading-[0.92] tracking-[-0.06em] sm:text-5xl">The Crate</h2>
+            <p class="mt-4 max-w-[25rem] text-sm leading-6 text-[#525157]">The numbers behind the story, ready for a closer look.</p>
+            <p class="mt-7 hidden border-t border-[#bcb8ae] pt-4 text-[10px] font-semibold uppercase leading-5 tracking-[0.24em] text-[#5b5961] lg:block">Insights today<br />Louder tomorrow</p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="grid gap-4 2xl:grid-cols-[minmax(0,1.8fr)_minmax(280px,0.9fr)]">
+              <article class="rounded-xl border border-[#d6d2ca] bg-[#fbf9f4] p-5 sm:p-6">
+                <h3 class="text-lg font-bold tracking-[-0.035em]">Platform details</h3>
+                <p class="mt-1 text-xs leading-5 text-[#66636b]">Commission ROI = (commission − promotion cost) ÷ promotion cost.</p>
+
+                <div class="mt-5 grid gap-3 md:hidden">
+                  <div class="rounded-lg border border-[#e1ddd5] p-4"><h4 class="font-bold">Instagram</h4><dl class="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-xs sm:grid-cols-3"><div><dt class="text-[#69666e]">Reach</dt><dd class="font-semibold">40,000</dd></div><div><dt class="text-[#69666e]">Engagements</dt><dd class="font-semibold">2,800 · 7.0%</dd></div><div><dt class="text-[#69666e]">Sales / reach</dt><dd class="font-semibold">80 · 0.20%</dd></div><div><dt class="text-[#69666e]">Commission</dt><dd class="font-semibold">€930</dd></div><div><dt class="text-[#69666e]">Promotion cost</dt><dd class="font-semibold">€300</dd></div><div><dt class="text-[#69666e]">Commission ROI</dt><dd class="font-semibold">210.00%</dd></div></dl></div>
+                  <div class="rounded-lg border border-[#e1ddd5] p-4"><h4 class="font-bold">TikTok</h4><dl class="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-xs sm:grid-cols-3"><div><dt class="text-[#69666e]">Reach</dt><dd class="font-semibold">60,000</dd></div><div><dt class="text-[#69666e]">Engagements</dt><dd class="font-semibold">5,400 · 9.0%</dd></div><div><dt class="text-[#69666e]">Sales / reach</dt><dd class="font-semibold">90 · 0.15%</dd></div><div><dt class="text-[#69666e]">Commission</dt><dd class="font-semibold">€945</dd></div><div><dt class="text-[#69666e]">Promotion cost</dt><dd class="font-semibold">€400</dd></div><div><dt class="text-[#69666e]">Commission ROI</dt><dd class="font-semibold">136.25%</dd></div></dl></div>
+                  <div class="rounded-lg border border-[#e1ddd5] p-4"><h4 class="font-bold">YouTube</h4><dl class="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-xs sm:grid-cols-3"><div><dt class="text-[#69666e]">Reach</dt><dd class="font-semibold">24,000</dd></div><div><dt class="text-[#69666e]">Engagements</dt><dd class="font-semibold">1,200 · 5.0%</dd></div><div><dt class="text-[#69666e]">Sales / reach</dt><dd class="font-semibold">60 · 0.25%</dd></div><div><dt class="text-[#69666e]">Commission</dt><dd class="font-semibold">€727.50</dd></div><div><dt class="text-[#69666e]">Promotion cost</dt><dd class="font-semibold">€250</dd></div><div><dt class="text-[#69666e]">Commission ROI</dt><dd class="font-semibold">191.00%</dd></div></dl></div>
+                  <div class="rounded-lg border border-[#e1ddd5] p-4"><h4 class="font-bold">Twitch</h4><dl class="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-xs sm:grid-cols-3"><div><dt class="text-[#69666e]">Reach</dt><dd class="font-semibold">10,000</dd></div><div><dt class="text-[#69666e]">Engagements</dt><dd class="font-semibold">900 · 9.0%</dd></div><div><dt class="text-[#69666e]">Sales / reach</dt><dd class="font-semibold">50 · 0.50%</dd></div><div><dt class="text-[#69666e]">Commission</dt><dd class="font-semibold">€630</dd></div><div><dt class="text-[#69666e]">Promotion cost</dt><dd class="font-semibold">€200</dd></div><div><dt class="text-[#69666e]">Commission ROI</dt><dd class="font-semibold">215.00%</dd></div></dl></div>
+                </div>
+
+                <div class="mt-5 hidden md:block">
+                  <table class="w-full table-fixed border-collapse text-left text-[11px] lg:text-xs">
+                    <caption class="sr-only">Platform performance for September 1 to 28, 2026</caption>
+                    <thead class="border-y border-[#d6d2ca] bg-[#f2efe8] text-[#55525a]"><tr><th scope="col" class="w-[16%] px-2 py-3 font-semibold">Platform</th><th scope="col" class="w-[12%] px-2 py-3 font-semibold">Reach</th><th scope="col" class="w-[14%] px-2 py-3 font-semibold">Engaged</th><th scope="col" class="w-[11%] px-2 py-3 font-semibold">Rate</th><th scope="col" class="w-[12%] px-2 py-3 font-semibold">Sales</th><th scope="col" class="w-[13%] px-2 py-3 font-semibold">Commission</th><th scope="col" class="w-[10%] px-2 py-3 font-semibold">Cost</th><th scope="col" class="w-[12%] px-2 py-3 font-semibold">ROI</th></tr></thead>
+                    <tbody class="divide-y divide-[#e7e3db]"><tr><th scope="row" class="px-2 py-3 font-semibold">Instagram</th><td class="px-2 py-3">40,000</td><td class="px-2 py-3">2,800</td><td class="px-2 py-3">7.0%</td><td class="px-2 py-3">80</td><td class="px-2 py-3">€930</td><td class="px-2 py-3">€300</td><td class="px-2 py-3">210.00%</td></tr><tr><th scope="row" class="px-2 py-3 font-semibold">TikTok</th><td class="px-2 py-3">60,000</td><td class="px-2 py-3">5,400</td><td class="px-2 py-3">9.0%</td><td class="px-2 py-3">90</td><td class="px-2 py-3">€945</td><td class="px-2 py-3">€400</td><td class="px-2 py-3">136.25%</td></tr><tr><th scope="row" class="px-2 py-3 font-semibold">YouTube</th><td class="px-2 py-3">24,000</td><td class="px-2 py-3">1,200</td><td class="px-2 py-3">5.0%</td><td class="px-2 py-3">60</td><td class="px-2 py-3">€727.50</td><td class="px-2 py-3">€250</td><td class="px-2 py-3">191.00%</td></tr><tr><th scope="row" class="px-2 py-3 font-semibold">Twitch</th><td class="px-2 py-3">10,000</td><td class="px-2 py-3">900</td><td class="px-2 py-3">9.0%</td><td class="px-2 py-3">50</td><td class="px-2 py-3">€630</td><td class="px-2 py-3">€200</td><td class="px-2 py-3">215.00%</td></tr></tbody>
+                    <tfoot class="border-t-2 border-[#17181c] font-bold"><tr><th scope="row" class="px-2 py-3">Total</th><td class="px-2 py-3">134,000</td><td class="px-2 py-3">10,300</td><td class="px-2 py-3">7.69%</td><td class="px-2 py-3">280</td><td class="px-2 py-3">€3,232.50</td><td class="px-2 py-3">€1,150</td><td class="px-2 py-3">181.09%</td></tr></tfoot>
+                  </table>
+                </div>
+                <p class="mt-4 text-xs leading-5 text-[#66636b]">Rates use each platform's reach. The total reach sums platforms and may count the same person more than once.</p>
+              </article>
+
+              <aside aria-labelledby="next-move-title" class="rounded-xl border border-[#d6d2ca] bg-[#fbf9f4] p-5 sm:p-6">
+                <h3 id="next-move-title" class="text-lg font-bold tracking-[-0.035em]">Rafi's next move</h3>
+                <div class="mt-5 inline-flex size-12 items-center justify-center rounded-full bg-[#c8f15a] text-2xl" aria-hidden="true">↗</div>
+                <p class="mt-5 text-2xl font-bold leading-tight tracking-[-0.04em]">Keep the live room strong. Test a clearer TikTok invitation to the Creator Kit.</p>
+                <p class="mt-5 border-t border-[#d6d2ca] pt-4 text-sm leading-6 text-[#56545b]">Twitch turns 0.50% of its reach into sales. TikTok brings the most sales, but its promotion cost leaves the lowest commission ROI. The Creator Kit earns the most commission per product.</p>
+              </aside>
+            </div>
+
+            <article class="rounded-xl border border-[#d6d2ca] bg-[#fbf9f4] p-5 sm:p-6">
+              <h3 class="text-lg font-bold tracking-[-0.035em]">Product details</h3>
+              <p class="mt-1 text-xs leading-5 text-[#66636b]">Sales value belongs to the partner products; commission is Rafi's tracked share.</p>
+              <div class="mt-5 grid gap-3 md:hidden">
+                <dl class="grid grid-cols-2 gap-3 rounded-lg border border-[#e1ddd5] p-4 text-sm"><div class="col-span-2 font-bold">Floor Pass</div><div><dt class="text-xs text-[#69666e]">Price</dt><dd>€50</dd></div><div><dt class="text-xs text-[#69666e]">Sales</dt><dd>135</dd></div><div><dt class="text-xs text-[#69666e]">Sales value</dt><dd>€6,750</dd></div><div><dt class="text-xs text-[#69666e]">Commission</dt><dd class="font-semibold">€1,012.50</dd></div></dl>
+                <dl class="grid grid-cols-2 gap-3 rounded-lg border border-[#e1ddd5] p-4 text-sm"><div class="col-span-2 font-bold">Creator Kit</div><div><dt class="text-xs text-[#69666e]">Price</dt><dd>€120</dd></div><div><dt class="text-xs text-[#69666e]">Sales</dt><dd>80</dd></div><div><dt class="text-xs text-[#69666e]">Sales value</dt><dd>€9,600</dd></div><div><dt class="text-xs text-[#69666e]">Commission</dt><dd class="font-semibold">€1,440</dd></div></dl>
+                <dl class="grid grid-cols-2 gap-3 rounded-lg border border-[#e1ddd5] p-4 text-sm"><div class="col-span-2 font-bold">Vinyl Bundle</div><div><dt class="text-xs text-[#69666e]">Price</dt><dd>€80</dd></div><div><dt class="text-xs text-[#69666e]">Sales</dt><dd>65</dd></div><div><dt class="text-xs text-[#69666e]">Sales value</dt><dd>€5,200</dd></div><div><dt class="text-xs text-[#69666e]">Commission</dt><dd class="font-semibold">€780</dd></div></dl>
+              </div>
+              <table class="mt-5 hidden w-full border-collapse text-left text-xs md:table">
+                <caption class="sr-only">Partner product sales and commissions</caption>
+                <thead class="border-y border-[#d6d2ca] bg-[#f2efe8] text-[#55525a]"><tr><th scope="col" class="px-3 py-3">Product</th><th scope="col" class="px-3 py-3">Price</th><th scope="col" class="px-3 py-3">Sales</th><th scope="col" class="px-3 py-3">Product sales value</th><th scope="col" class="px-3 py-3">Rafi's 15% commission</th></tr></thead>
+                <tbody class="divide-y divide-[#e7e3db]"><tr><th scope="row" class="px-3 py-3 font-semibold">Floor Pass</th><td class="px-3 py-3">€50</td><td class="px-3 py-3">135</td><td class="px-3 py-3">€6,750</td><td class="px-3 py-3">€1,012.50</td></tr><tr><th scope="row" class="px-3 py-3 font-semibold">Creator Kit</th><td class="px-3 py-3">€120</td><td class="px-3 py-3">80</td><td class="px-3 py-3">€9,600</td><td class="px-3 py-3">€1,440</td></tr><tr><th scope="row" class="px-3 py-3 font-semibold">Vinyl Bundle</th><td class="px-3 py-3">€80</td><td class="px-3 py-3">65</td><td class="px-3 py-3">€5,200</td><td class="px-3 py-3">€780</td></tr></tbody>
+                <tfoot class="border-t-2 border-[#17181c] font-bold"><tr><th scope="row" class="px-3 py-3">Total</th><td class="px-3 py-3">—</td><td class="px-3 py-3">280</td><td class="px-3 py-3">€21,550</td><td class="px-3 py-3">€3,232.50</td></tr></tfoot>
+              </table>
+              <p class="mt-5 rounded-md bg-[#edf3db] px-4 py-3 text-sm"><strong>After promotion costs:</strong> €3,232.50 commission − €1,150 cost = <strong>€2,082.50</strong>.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#101114] text-[#f3f0e7]">
+      <div class="mx-auto flex max-w-[1600px] flex-col gap-2 px-5 py-6 text-xs sm:px-8 md:flex-row md:items-center md:justify-between lg:px-12">
+        <p class="font-bold">OPEN FLOOR <span class="text-[#c8f15a]">// Backstage</span></p>
+        <p class="text-[#bcb9b1]">September 1–28, 2026 · Fictional sample data</p>
+        <p class="uppercase tracking-[0.18em] text-[#bcb9b1]">Music connects us.</p>
+      </div>
+    </footer>
+  </body>
+</html>
